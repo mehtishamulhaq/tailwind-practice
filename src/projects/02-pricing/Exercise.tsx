@@ -19,7 +19,7 @@ export default function PricingExercise() {
           cancel any time.
         </p>
 
-        <div className="bg-slate-100 p-1 mt-8 mb-12 gap-1 rounded-full flex items-center w-fit mx-auto text-sm">
+        <div className="bg-slate-100 p-1 mt-8 mb-16 gap-1 rounded-full flex items-center w-fit mx-auto text-sm">
           <button className="bg-white rounded-full py-1.5 px-5 font-medium shadow-sm">
             Monthly
           </button>
@@ -32,7 +32,7 @@ export default function PricingExercise() {
         </div>
       </header>
 
-      <div className=" flex flex-col lg:flex-row gap-8 lg:items-center">
+      <div className=" flex flex-col lg:flex-row gap-8 lg:items-center lg:justify-center">
         {plans.map((plan) => (
           /* The featured plan gets a dark, raised style: use plan.featured to pick classes */
           <section
