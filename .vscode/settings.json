@@ -1,0 +1,10 @@
+{
+  // Finished versions of the projects. Hidden so you can't peek at the classes —
+  // they still render in the app's "Target" and "Side by side" views.
+  "files.exclude": {
+    "src/_targets": true
+  },
+  "search.exclude": {
+    "src/_targets": true
+  }
+}
