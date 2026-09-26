@@ -8,27 +8,31 @@ import clsx from 'clsx';
 
 export default function PricingExercise() {
   return (
-    <div className="py-22 px-6 min-h-screen bg-white">
+    <div className="py-12 px-6 min-h-screen bg-white">
       <header className="text-center space-y-3 my-10 max-w-2xl mx-auto">
-        <p className="text-indigo-700 uppercase tex-xs ">Pricing</p>
+        <p className="text-indigo-700 uppercase text-sm font-semibold">
+          Pricing
+        </p>
         <h1 className="text-4xl font-bold">Plans that grow with your team</h1>
         <p className="text-slate-600 text-lg leading-relaxed">
           Simple, transparent pricing. Start free, upgrade when you need more —
           cancel any time.
         </p>
 
-        <div className="bg-slate-100 p-1 my-6 gap-1 rounded-full flex items-center w-fit mx-auto text-sm">
+        <div className="bg-slate-100 p-1 mt-8 mb-12 gap-1 rounded-full flex items-center w-fit mx-auto text-sm">
           <button className="bg-white rounded-full py-1.5 px-5 font-medium shadow-sm">
             Monthly
           </button>
           <button className="flex items-center gap-2 rounded-full py-1.5 px-5 text-slate-600">
             Yearly
-            <span className="bg-green-200 px-2 py-0.5 rounded-full text-xs">-20%</span>
+            <span className="bg-green-200 px-2 py-0.5 rounded-full text-xs">
+              -20%
+            </span>
           </button>
         </div>
       </header>
 
-      <div className="space-y-8">
+      <div className=" flex flex-col lg:flex-row gap-8 lg:items-center">
         {plans.map((plan) => (
           /* The featured plan gets a dark, raised style: use plan.featured to pick classes */
           <section
@@ -36,7 +40,7 @@ export default function PricingExercise() {
             className={clsx(
               'relative rounded-2xl flex flex-col p-8 gap-2 ',
               plan.featured
-                ? 'ring-2 ring-indigo-500 text-white bg-slate-900 shadow-xl shadow-indigo-200'
+                ? 'ring-2 ring-indigo-500 text-white bg-slate-900 shadow-xl shadow-indigo-200 lg:scale-105'
                 : 'border border-slate-200 ',
             )}
           >
