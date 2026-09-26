@@ -8,8 +8,8 @@ import clsx from 'clsx';
 
 export default function PricingExercise() {
   return (
-    <div className="my-22 mx-6">
-      <header className="text-center space-y-3 max-w-xs my-10">
+    <div className="py-22 px-6 min-h-screen bg-white">
+      <header className="text-center space-y-3 my-10 max-w-2xl mx-auto">
         <p className="text-indigo-700 uppercase tex-xs ">Pricing</p>
         <h1 className="text-4xl font-bold">Plans that grow with your team</h1>
         <p className="text-slate-600 text-lg leading-relaxed">
@@ -17,13 +17,13 @@ export default function PricingExercise() {
           cancel any time.
         </p>
 
-        <div className="bg-slate-100 p-1 mx-10 my-12 flex gap-2 justify-evenly rounded-full">
-          <button className="flex-1 bg-white h-full, w-full rounded-full py-1 px-2">
+        <div className="bg-slate-100 p-1 my-6 gap-1 rounded-full flex items-center w-fit mx-auto text-sm">
+          <button className="bg-white rounded-full py-1.5 px-5 font-medium shadow-sm">
             Monthly
           </button>
-          <button className="flex-2 justify-evenly flex items-center text-slate-600 text-sm">
+          <button className="flex items-center gap-2 rounded-full py-1.5 px-5 text-slate-600">
             Yearly
-            <span className="bg-green-200 px-1.5 rounded-full ">-20%</span>
+            <span className="bg-green-200 px-2 py-0.5 rounded-full text-xs">-20%</span>
           </button>
         </div>
       </header>
